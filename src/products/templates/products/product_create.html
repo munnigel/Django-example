@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- csrf is a security feature for posting data. csrf is a middleware token to safely post data -->
+<form method="post"> {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Save" />
+</form>
+
+{% endblock %}
