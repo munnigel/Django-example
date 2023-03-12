@@ -17,6 +17,7 @@ class ProductForm(forms.ModelForm):
   )
   price = forms.DecimalField(initial=199.99)
   email = forms.EmailField()
+  
   class Meta:
     model = Product
     fields = [

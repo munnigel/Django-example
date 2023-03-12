@@ -5,6 +5,8 @@ from .forms import ProductForm
 from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
+# Function-based views
+
 def product_create_view(request):
   # instantiate ProductForm class
   form = ProductForm(request.POST or None) # Renders out the form with data if POST data comes through, or elee render an empty form for other requests (GET). There are now validation errors to make sure the data is valid.

@@ -14,3 +14,12 @@ Product.objects.all()
 Product.objects.create(title='New product 2', description='another one', price='1911', summary='sweet')
 Product.objects.all()
 ```
+
+**To show the model in the Django admin, add in to the following code in admin.py:**
+```
+from django.contrib import admin
+from .models import Product
+
+# Register your models here.
+admin.site.register(Product)
+```
